@@ -1,0 +1,13 @@
+{
+  "name": "g.ts",
+  "version": "0.1.0",
+  "description": "Global TypeScript types for everyday use",
+  "license": "MIT",
+  "author": "Sasha Koss <koss@nocorp.me>",
+  "main": "",
+  "types": "g.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kossnocorp/g.ts.git"
+  }
+}
