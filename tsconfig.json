@@ -1,0 +1,22 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    // Explictly enable type checking d.ts
+    "skipLibCheck": false,
+    // Allow using as a git submodule in a monorepo setup
+    "composite": true,
+    "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true
+  }
+}
