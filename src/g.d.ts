@@ -22,4 +22,9 @@ declare global {
    *   a component, the optional props can be passed as undefined.
    */
   type Props<Type> = Optional<Type>;
+
+  /**
+   * Maybe array type.
+   */
+  type MaybeArray<Type> = Type | (Type extends Type ? Type[] : never);
 }
