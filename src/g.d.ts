@@ -7,11 +7,6 @@ declare global {
   type Falsy = false | 0 | "" | null | undefined;
 
   /**
-   * Plain object constraint.
-   */
-  export type PlainObject = { constructor: ObjectConstructor };
-
-  /**
    * Adds undefined to all optional properties.
    */
   type Optional<Type> = {
@@ -37,7 +32,8 @@ declare global {
    * Deep required type.
    */
   type DeepRequired<Type> = {
-    [Key in keyof Type]-?: Type[Key] extends PlainObject
+    // [TODO] Find a way to constrain plain objects only.
+    [Key in keyof Type]-?: Type[Key] extends {}
       ? Required<Type[Key]>
       : Type[Key];
   };
