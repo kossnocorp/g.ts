@@ -32,7 +32,7 @@ declare global {
    * Deep required type.
    */
   type DeepRequired<Type> = {
-    // [TODO] Find a way to constrain plain objects only.
+    // TODO: Find a way to constrain plain objects only.
     [Key in keyof Type]-?: Type[Key] extends {}
       ? Required<Type[Key]>
       : Type[Key];
