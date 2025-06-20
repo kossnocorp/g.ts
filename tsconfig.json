@@ -17,6 +17,7 @@
     "incremental": true,
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "tsBuildInfoFile": "${configDir}/.ts/tsconfig.tsbuildinfo"
   }
 }
